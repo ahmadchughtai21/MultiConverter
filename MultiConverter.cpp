@@ -2,6 +2,14 @@
 using namespace std;
 
 int main() {
-    cout<<"Ikrash";
+    cout << "  #####  ####   #####  ####  #####    #            #   ####" << endl;
+    cout << " #      #    #    #   #    # #    #    #          #   #    # " << endl;
+    cout << " #      #    #    #   #    # #    #     #        #    #    #" << endl;
+    cout << " # #### ######    #   #    # #####       #      #     ######  " << endl;
+    cout << " #    # #    #    #   #    # #   #        #    #      #    #" << endl;
+    cout << " #    # #    #    #   #    # #    #        #  #       #    #" << endl;
+    cout << "  ##### #    #    #    ####  #     #        ##        #    #" << endl;
+
     return 0;
 }
+
