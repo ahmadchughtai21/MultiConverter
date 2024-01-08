@@ -3,6 +3,7 @@ using namespace std;
 
 int main()
 {
+menu:
     cout << " ==================================================================================" << endl;
     cout << "=  #####  ####   #####  ####  #####    #           #   ####   #####  ####   #####   =" << endl;
     cout << "= #      #    #    #   #    # #    #    #         #   #    #    #   #    #  #    #  =" << endl;
@@ -29,19 +30,28 @@ int main()
     cout << "Enter a Choice from the Options Above : ";
 
     char choice1;
-    cin >>choice1;
+    cin >> choice1;
 
-switch (choice1)
-{
-case '1':
-    cout <<"Choice = 1 "; 
-    break;
+    // Choices
+    switch (choice1)
+    {
+    case '1':
+        cout << "\n\t\t\t\t      ++++Calculator++++" << endl;
+        cout << "1. Addition" << endl;
+        cout << "2. Subtraction" << endl;
+        cout << "3. Multiplication" << endl;
+        cout << "4. Division" << endl;
 
-default:
-    cout <<"Enter a valid choice!";
-}
-    
-    
+        cout << "Enter a Choice from the Options Above : ";
+        break;
+
+    default:
+        cout << "Enter a valid choice!" << endl;
+        cout << endl;
+        cout << endl;
+        cout << endl;
+        goto menu;
+    }
 
     return 0;
 }
