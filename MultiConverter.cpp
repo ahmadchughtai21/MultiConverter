@@ -35,77 +35,63 @@ int main()
     // Choices
     switch (choice1)
     {
-    case '1':
-        cout << "\n\t\t\t\t      ++++Calculator++++" << endl;
-        cout << "1. Addition" << endl;
-        cout << "2. Subtraction" << endl;
-        cout << "3. Multiplication" << endl;
-        cout << "4. Division" << endl;
-		char cal_choice;
-        cout << "Enter a Choice from the Options Above : ";
-        cin>>cal_choice;
-        int amountNum;
-        float num,resultAdd,resultSub,resultMul;
-        resultMul=1;
-        resultAdd=0;
-        resultSub=0;
-        int result;
-       
-        	switch(cal_choice)
+    	case '1':
+        	cout << "\n\t\t\t\t      ++++Basic Calculator++++" << endl;
+        	menucal:
+        	cout << "\n1. Addition" << endl;
+        	cout << "2. Subtraction" << endl;
+        	cout << "3. Multiplication" << endl;
+        	cout << "4. Division" << endl;
+			char cal_choice;
+        	cout << "Enter a Choice from the Options Above : ";
+        	cin>>cal_choice;
+       		switch(cal_choice)
 			{
 				case'1':
+					float num1,num2,addition;
 					cout<<"\nADDITION!";
-					cout<<"\nEnter the amount of numbers you want to add = ";
-					cin>>amountNum;
-					for(int i=1;i<=amountNum;i++)
-					{
-						cout<<"\nEnter Number"<<i<<" = ";
-						cin>>num;
-						resultAdd=resultAdd+num;
-					}
-					cout<<"Result = "<<resultAdd;
+					cout<<"\nEnter First Number = ";
+					cin>>num1;
+					cout<<"\nEnter Second Number = ";
+					cin>>num2;
+					addition=num1+num2;
+					cout<<"Addition = "<<addition;
+					break;
 				case'2':
+					float sub;
 					cout<<"\nSUBTRACTION!";
-					cout<<"\nEnter the amount of numbers you want to subtract = ";
-					cin>>amountNum;
-					int i=1;
-					while(i<=amountNum)
-					{
-						cout<<"\nEnter Number "<<i<<" = ";
-						cin>>num;
-						if(i==1)
-						{
-						
-							resultSub=resultSub+num;
-						}
-						i++;
-						if(i!=1)
-						{
-							resultSub=resultSub-num;			
-						}
-					}	
-					cout<<"Result = "<<resultSub;
+					cout<<"\nEnter First Number = ";
+					cin>>num1;
+					cout<<"\nEnter Second Number = ";
+					cin>>num2;
+					sub=num1-num2;
+					cout<<"Subtraction = "<<sub;
+					break;
 				case'3':
-					cout<<"\nMULTIPLICATION!";
-					cout<<"\nEnter the amount of numbers you want to Multiply = ";
-					cin>>amountNum;
-					for(int i=1;i<=amountNum;i++)
-					{
-						cout<<"\nEnter Number"<<i<<" = ";
-						cin>>num;
-						resultMul=resultMul*num;
-					}
-					cout<<"Result = "<<resultMul;
-		
-		}
-    }
+					float mul;
+					cout<<"\nMultiplication!";
+					cout<<"\nEnter First Number = ";
+					cin>>num1;
+					cout<<"\nEnter Second Number = ";
+					cin>>num2;
+					mul=num1*num2;
+					cout<<"Multiplication = "<<mul;
+					break;
+				case'4':
+					float div;
+					cout<<"\nDivision!";
+					cout<<"\nEnter First Number = ";
+					cin>>num1;
+					cout<<"\nEnter Second Number = ";
+					cin>>num2;
+					div=num1/num2;
+					cout<<"Division = "<<div;
+					break;
+				default:
+					cout<<"Enter a valid choice!";
+					goto menucal;
+			}
 
-    default:
-        cout << "Enter a valid choice!" << endl;
-        cout << endl;
-        cout << endl;
-        cout << endl;
-        goto menu;
     }
 
     return 0;
