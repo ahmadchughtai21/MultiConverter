@@ -1,32 +1,47 @@
 #include <iostream>
 using namespace std;
 
-int main() 
+int main()
 {
-	cout<<" =================================================================================="<<endl;
-    cout <<"=  #####  ####   #####  ####  #####    #           #   ####   #####  ####   #####   ="  << endl;
-    cout <<"= #      #    #    #   #    # #    #    #         #   #    #    #   #    #  #    #  =" << endl;
-    cout <<"= #      #    #    #   #    # #    #     #       #    #    #    #   #    #  #    #  =" << endl;
-    cout <<"= # #### ######    #   #    # #####       #     #     ######    #   #    #  #####   =" << endl;
-    cout <<"= #    # #    #    #   #    # #   #        #   #      #    #    #   #    #  #   #   =" << endl;
-    cout <<"= #    # #    #    #   #    # #    #        # #       #    #    #   #    #  #    #  =" << endl;
-    cout <<"=  ##### #    #    #    ####  #     #        #        #    #    #    ####   #     # =" << endl;
-	cout<<" =================================================================================="<<endl;
-	cout<<"\n\t\t\t\t      ++++MENU++++"<<endl;
-	
-	
-//menu
+    cout << " ==================================================================================" << endl;
+    cout << "=  #####  ####   #####  ####  #####    #           #   ####   #####  ####   #####   =" << endl;
+    cout << "= #      #    #    #   #    # #    #    #         #   #    #    #   #    #  #    #  =" << endl;
+    cout << "= #      #    #    #   #    # #    #     #       #    #    #    #   #    #  #    #  =" << endl;
+    cout << "= # #### ######    #   #    # #####       #     #     ######    #   #    #  #####   =" << endl;
+    cout << "= #    # #    #    #   #    # #   #        #   #      #    #    #   #    #  #   #   =" << endl;
+    cout << "= #    # #    #    #   #    # #    #        # #       #    #    #   #    #  #    #  =" << endl;
+    cout << "=  ##### #    #    #    ####  #     #        #        #    #    #    ####   #     # =" << endl;
+    cout << " ==================================================================================" << endl;
+    cout << "\n\t\t\t\t      ++++MENU++++" << endl;
 
-	cout <<"Enter a Choice from the Options Below :" <<endl;
-	cout <<"1. Calculator" <<endl;
-	cout <<"1. Calculator" <<endl;
-	cout <<"1. Calculator" <<endl;
-	cout <<"1. Calculator" <<endl;
-	cout <<"1. Calculator" <<endl;
-	cout <<"1. Calculator" <<endl;
-	cout <<"1. Calculator" <<endl;
-	cout <<"1. Calculator" <<endl;
-	
+    // menu
+
+    cout << "1. Calculator" << endl;
+    cout << "2. Length Conversions" << endl;
+    cout << "3. Time Conversions" << endl;
+    cout << "4. Temperature Conversions" << endl;
+    cout << "5. Weight Conversions" << endl;
+    cout << "6. Volume Conversions" << endl;
+    cout << "7. Speed Conversions" << endl;
+    cout << "8. Angular Conversions" << endl;
+    cout << "9. Digital Storage Conversions" << endl;
+    cout << "10. Currency Conversions" << endl;
+    cout << "Enter a Choice from the Options Above : ";
+
+    char choice1;
+    cin >>choice1;
+
+switch (choice1)
+{
+case '1':
+    cout <<"Choice = 1 "; 
+    break;
+
+default:
+    cout <<"Enter a valid choice!";
+}
+    
+    
+
     return 0;
 }
-
