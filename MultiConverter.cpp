@@ -36,7 +36,7 @@ int main()
     switch (choice1)
     {
     	case '1':
-        	cout << "\n\t\t\t\t      ++++Basic Calculator++++" << endl;
+        	cout << "\n\t\t\t\t      ++++BASIC CALCULATOR++++" << endl;
         	menucal:
         	cout << "\n1. Addition" << endl;
         	cout << "2. Subtraction" << endl;
@@ -91,7 +91,9 @@ int main()
 					cout<<"Enter a valid choice!";
 					goto menucal;
 			}
-
+		case '2':
+			cout<<"\n\t\t\t\t      ++++LENGTH CONVERSION++++";
+			cout<<"";
     }
 
     return 0;
