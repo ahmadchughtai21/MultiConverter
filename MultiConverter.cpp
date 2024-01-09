@@ -178,7 +178,6 @@ int main()
 					cout<<"\nSECONDS = "<<sec;
 					break;	
 				case '5':
-					case '3':
 					cout<<"DAYS TO MINUTES!"<<endl;
 					cout<<"Enter the amount of DAYS = ";
 					int day1;
@@ -195,6 +194,29 @@ int main()
         	cout<<"Choice = ";
 			char temp_choice;
 			cin>>temp_choice;	
+			switch(temp_choice)
+			{
+				case '1':
+					cout<<"\nCELSIUS TO FAHRENHEIT!";
+					cout<<"\nEnter your temprature in CELSIUS = ";
+					float cel;
+					cin>>cel;
+					float fah;
+					fah=(9.0/5.0)*cel+32;
+					cout<<"Temprature in FAHRENHEIT = "<<fah;
+					break;
+				case '2':
+					cout<<"\nFAHRENHEIT TO CELSIUS!";
+					cout<<"\nEnter your temprature in FAHRENHEIT = ";
+					float fah1;
+					cin>>fah1;
+					float cel1;
+					cel1=(5.0/9.0)*(fah1-32);
+					cout<<"Temprature in CELSIUS = "<<cel1;
+					break;	
+			}
+		case '5':
+				
     }
 
     return 0;
