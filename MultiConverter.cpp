@@ -93,7 +93,108 @@ int main()
 			}
 		case '2':
 			cout<<"\n\t\t\t\t      ++++LENGTH CONVERSION++++";
-			cout<<"";
+			len:
+			cout<<"\n1.Feet to Meters";
+			cout<<"\n2.Meter to Feet";
+			char choiceL;
+			cout<<"\nChoice = ";
+			cin>>choiceL;
+			if(choiceL=='2'||choiceL=='1')
+			{
+			
+			switch(choiceL)
+				{
+					case '1':
+						cout<<"FEET TO METERS";
+						cout<<"\nEnter the lenght in Feets = ";
+						float feet;
+						cin>>feet;
+						float meter;
+						meter=feet/3.28;
+						cout<<"\nMeters = "<<meter;
+						break;
+					case '2':
+						cout<<"METERS TO FEET";
+						cout<<"\nEnter the lenght in meters = ";
+						float meterL;
+						cin>>meterL;
+						float feetL;
+						feetL=meterL*3.28;
+						cout<<"\nFeets = "<<feetL;
+						break;								
+				}
+			
+			}else
+			{
+				cout<<"Invalid choice!";
+				goto len;
+			}
+		case '3':
+			cout << "\n\t\t\t\t      ++++TIME CONVERSION++++" << endl;
+        	cout << "\n1. Hours to Minutes" << endl;
+        	cout << "2. Minutes to Hour" << endl;
+        	cout << "3. Days to Hour" << endl;
+        	cout << "4. Hours to Seconds" << endl;
+        	cout << "5. Days to Minutes" << endl;
+        	cout<<"Choice = ";
+			char time_choice;
+			cin>>time_choice;
+			switch(time_choice)
+			{
+				case '1':
+					cout<<"HOURS TO MINUTES !"<<endl;
+					cout<<"Enter the Time in Hours = ";
+					float hour1;
+					float minute1;
+					cin>>hour1;
+					minute1=hour1*60;
+					cout<<"\nTime in MINUTES = "<<minute1;
+					break;
+				case '2':	
+					cout<<"MINUTES TO HOURS !"<<endl;
+					cout<<"Enter the Time in Minutes = ";
+					float hour2;
+					float minute2;
+					cin>>minute2;
+					hour2=minute1/60;
+					cout<<"\nTime in HOURS = "<<hour2;
+					break;
+				case '3':
+					cout<<"DAYS TO HOUR!"<<endl;
+					cout<<"Enter the amount of DAYS = ";
+					int day;
+					int hour3;
+					cin>>day;
+					hour3=day*24;
+					cout<<"\nHOURS = "<<hour3;
+					break;					
+				case '4':
+					cout<<"HOUR TO SECONDS!"<<endl;
+					cout<<"Enter the amount of HOURS = ";
+					int sec;
+					int hour4;
+					cin>>hour4;
+					sec=hour4*3600;
+					cout<<"\nSECONDS = "<<sec;
+					break;	
+				case '5':
+					case '3':
+					cout<<"DAYS TO MINUTES!"<<endl;
+					cout<<"Enter the amount of DAYS = ";
+					int day1;
+					int minute4;
+					cin>>day1;
+					minute4=day*24*60;
+					cout<<"\nMINUTES = "<<minute4;
+					break;	
+			}	
+		case '4':
+			cout << "\n\t\t\t\t      ++++TEMPRATURE CONVERSIONS++++" << endl;
+        	cout << "\n1. Celsius to Fahrenheit" << endl;
+        	cout << "2. Fahrenheit to Celsius" << endl;
+        	cout<<"Choice = ";
+			char temp_choice;
+			cin>>temp_choice;	
     }
 
     return 0;
