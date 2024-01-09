@@ -228,7 +228,7 @@ menu:
 		char weight_choice;
 		cin >> weight_choice;
 
-		float grams, kilograms, pounds;
+		float grams, kilograms, pounds, ounces;
 		
 
 		switch (weight_choice)
@@ -255,7 +255,49 @@ menu:
 			kilograms = pounds * 0.45359237;
 			cout << "\nKILOGRAMS = " << kilograms;
 			break;
+		case '4':
+			cout << "KILOGRAMS TO POUNDS!" << endl;
+			cout << "Enter the amount in KILOGRAMS = ";
+			cin >> kilograms;
+			pounds = kilograms / 0.45359237;
+			cout << "\nPOUNDS = " << pounds;
+			break;
+		case '5':
+			cout << "GRAMS TO OUNCES!" << endl;
+			cout << "Enter the amount in GRAMS = ";
+			cin >> grams;
+			ounces = grams ; //formula
+			cout << "\nounces = " << ounces;
+			break;
+		case '6':
+			cout << "OUNCES TO GRAMS!" << endl;
+			cout << "Enter the amount in OUNCES = ";
+			cin >> ounces;
+			grams = ounces ;  //formula
+			cout << "\nPOUNDS = " << pounds;
+			break;
 		}
+	case '6':
+		cout << "\n\t\t\t\t      ++++VOLUME CONVERSIONS++++" << endl;
+		cout << "\n1. Grams to Kilograms" << endl;
+		cout << "\n2. Kilograms to Grams" << endl;
+		cout << "\n3. Pounds to Kilograms" << endl;
+		cout << "\n4. Kilograms to Pounds " << endl;
+		cout << "\n5. Grams to Ounces" << endl;
+		cout << "\n6. Ounces to Grams" << endl;
+
+		cout << "Choice = ";
+		char weight_choice;
+		cin >> weight_choice;
+
+		float grams, kilograms, pounds, ounces;
+	
+	
+	
+	
+	
+	
+	
 	}
 
 	return 0;
