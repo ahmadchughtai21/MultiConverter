@@ -267,7 +267,7 @@ menu:
 			cout << "Enter the amount in GRAMS = ";
 			cin >> grams;
 			ounces = grams ; //formula
-			cout << "\nounces = " << ounces;
+			cout << "\nOUNCES = " << ounces;
 			break;
 		case '6':
 			cout << "OUNCES TO GRAMS!" << endl;
