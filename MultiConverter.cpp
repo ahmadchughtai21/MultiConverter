@@ -12,14 +12,12 @@ int main()
 	// cout << "= #    # #    #    #   #    # #   #        #   #      #    #    #   #    #  #   #   =" << endl;
 	// cout << "= #    # #    #    #   #    # #    #        # #       #    #    #   #    #  #    #  =" << endl;
 	// cout << "=  ##### #    #    #    ####  #     #        #        #    #    #    ####   #     # =" << endl;
-cout<<" .--.  .--. .-----. .--. .---.   .-..-. .--. .-----. .--. .---. "<<endl;
-cout<<": .--': .; :`-. .-': ,. :: .; :  : :: :: .; :`-. .-': ,. :: .; :"<<endl;
-cout<<": : _ :    :  : :  : :: ::   .'  : :: ::    :  : :  : :: ::   .'"<<endl;
-cout<<": :; :: :: :  : :  : :; :: :.`.  : `' ;: :: :  : :  : :; :: :.`."<<endl;
-cout<<"`.__.':_;:_;  :_;  `.__.':_;:_;   `.,' :_;:_;  :_;  `.__.':_;:_;"<<endl;
-                                                                
-                                                                
- 
+	cout << " .--.  .--. .-----. .--. .---.   .-..-. .--. .-----. .--. .---. " << endl;
+	cout << ": .--': .; :`-. .-': ,. :: .; :  : :: :: .; :`-. .-': ,. :: .; :" << endl;
+	cout << ": : _ :    :  : :  : :: ::   .'  : :: ::    :  : :  : :: ::   .'" << endl;
+	cout << ": :; :: :: :  : :  : :; :: :.`.  : `' ;: :: :  : :  : :; :: :.`." << endl;
+	cout << "`.__.':_;:_;  :_;  `.__.':_;:_;   `.,' :_;:_;  :_;  `.__.':_;:_;" << endl;
+
 	cout << "================================================================" << endl;
 	cout << "\n\t\t\t\t      ++++MENU++++" << endl;
 
@@ -237,7 +235,6 @@ menu:
 		cin >> weight_choice;
 
 		float grams, kilograms, pounds, ounces;
-		
 
 		switch (weight_choice)
 		{
@@ -274,25 +271,17 @@ menu:
 			cout << "GRAMS TO OUNCES!" << endl;
 			cout << "Enter the amount in GRAMS = ";
 			cin >> grams;
-			ounces = grams ; //formula
+			ounces = grams; // formula
 			cout << "\nOUNCES = " << ounces;
 			break;
 		case '6':
 			cout << "OUNCES TO GRAMS!" << endl;
 			cout << "Enter the amount in OUNCES = ";
 			cin >> ounces;
-			grams = ounces ;  //formula
+			grams = ounces; // formula
 			cout << "\nPOUNDS = " << pounds;
 			break;
 		}
-	
-
-	
-	
-	
-	
-	
-	
 	}
 
 	return 0;
