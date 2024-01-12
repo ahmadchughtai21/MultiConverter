@@ -3,15 +3,7 @@ using namespace std;
 
 int main()
 {
-
-	// cout << " ==================================================================================" << endl;
-	// cout << "=  #####  ####   #####  ####  #####    #           #   ####   #####  ####   #####   =" << endl;
-	// cout << "= #      #    #    #   #    # #    #    #         #   #    #    #   #    #  #    #  =" << endl;
-	// cout << "= #      #    #    #   #    # #    #     #       #    #    #    #   #    #  #    #  =" << endl;
-	// cout << "= # #### ######    #   #    # #####       #     #     ######    #   #    #  #####   =" << endl;
-	// cout << "= #    # #    #    #   #    # #   #        #   #      #    #    #   #    #  #   #   =" << endl;
-	// cout << "= #    # #    #    #   #    # #    #        # #       #    #    #   #    #  #    #  =" << endl;
-	// cout << "=  ##### #    #    #    ####  #     #        #        #    #    #    ####   #     # =" << endl;
+	const int PI=3.141592;
 	cout << " .--.  .--. .-----. .--. .---.   .-..-. .--. .-----. .--. .---. " << endl;
 	cout << ": .--': .; :`-. .-': ,. :: .; :  : :: :: .; :`-. .-': ,. :: .; :" << endl;
 	cout << ": : _ :    :  : :  : :: ::   .'  : :: ::    :  : :  : :: ::   .'" << endl;
@@ -32,7 +24,7 @@ menu:
 	cout << "7. Speed Conversions" << endl;
 	cout << "8. Angular Conversions" << endl;
 	cout << "9. Digital Storage Conversions" << endl;
-	cout << "10. Currency Conversions" << endl;
+	cout << "10. Constant Values" << endl;
 	cout << "Enter a Choice from the Options Above : ";
 
 	char choice1;
@@ -282,7 +274,182 @@ menu:
 			cout << "\nPOUNDS = " << pounds;
 			break;
 		}
-	}
-
-	return 0;
+	case '6':
+		cout << "\n\t\t\t\t      ++++VOLUMN CONVERSIONS++++" << endl;
+		cout << "\n1. Milliliters to Liters" << endl;
+		cout << "\n2. Gallons to Liters" << endl;
+		cout << "\n3. Liters to Gallons" << endl;
+		cout << "\n4. Liters to Milliliters " << endl;
+		char volumn_choice;
+		cout<<"Choice = ";
+		cin>>volumn_choice;
+		switch(volumn_choice)
+		{
+			case '1':
+				cout<<"MILLILITERS TO LITERS!"<<endl;
+				cout<<"Enter Volumn in Milliliters = ";
+				float millil;
+				cin>>millil;
+				float lit;
+				lit=millil/1000;
+				cout<<"\nLiters = "<<lit;
+				break;
+			case '2':
+				cout<<"GALLONS TO LITERS!"<<endl;
+				cout<<"Enter Volumn in Gallons = ";
+				float gal;
+				cin>>gal;
+				float lit2;
+				lit2=gal*3.785;
+				cout<<"\nLiters = "<<lit2;
+				break;	
+			case '3':
+				cout<<"LITERS TO GALLON!"<<endl;
+				cout<<"Enter Volumn in Liters = ";
+				float lit3;
+				cin>>lit3;
+				float gal2;
+				gal2=lit3/3.785;
+				cout<<"\nGallons = "<<gal2;
+				break;	
+			case '4':
+				cout<<"LITERS TO MILLILITERS"<<endl;
+				cout<<"Enter Volumn in Liters = ";
+				float lit4;
+				cin>>lit4;
+				float millil2;
+				millil2=lit4*1000;
+				cout<<"\nMilliliters = "<<millil2;
+				break;		
+		}
+	case '7':
+		cout << "\n\t\t\t\t      ++++SPEED CONVERSIONS++++" << endl;
+		cout << "\n1.Meters per Second to Kilometers per Hour" << endl;
+		cout << "\n2.Kilometers per Hour to Meters per Second" << endl;
+		cout << "\n3.Miles per Hour to Kilometers per Hour" << endl;
+		cout << "\n4.Kilometers per Hour to Miles per Hour" << endl;
+		char speed_choice;
+		cout<<"Choice = ";
+		cin>>speed_choice;
+		switch (speed_choice) 
+		{
+        	case '1': 
+				cout << "METERS PER SECOND TO KILOMETERS PER HOUR!" << endl;
+            	cout << "Enter Speed in Meters per Second = ";
+            	float meters_per_second;
+            	cin >> meters_per_second;
+            	float kilometers_per_hour;
+            	kilometers_per_hour = meters_per_second * 3.6;
+            	cout << "\nKilometers per Hour = " << kilometers_per_hour;
+            	break;
+        	case '2': 
+				cout << "KILOMETERS PER HOUR TO METERS PER SECOND!" << endl;
+            	cout << "Enter Speed in Kilometers per Hour = ";
+            	float kilometers_per_hour2;
+            	cin >> kilometers_per_hour2;
+            	float meters_per_second2;
+            	meters_per_second2 = kilometers_per_hour2 / 3.6;
+            	cout << "\nMeters per Second = " << meters_per_second2;
+            	break;
+			case '3': 
+            	cout << "MILES PER HOUR TO KILOMETERS PER HOUR!" << endl;
+            	cout << "Enter Speed in Miles per Hour = ";
+            	float miles_per_hour;
+            	cin >> miles_per_hour;
+            	float kilometers_per_hour3;
+            	kilometers_per_hour3 = miles_per_hour * 1.60934;
+            	cout << "\nKilometers per Hour = " << kilometers_per_hour3;
+            	break;
+    		case '4': 
+				cout << "KILOMETERS PER HOUR TO MILES PER HOUR!" << endl;
+            	cout << "Enter Speed in Kilometers per Hour = ";
+           		float kilometers_per_hour4;
+            	cin >> kilometers_per_hour4;
+            	float miles_per_hour2;
+            	miles_per_hour2 = kilometers_per_hour4 / 1.60934;
+            	cout << "\nMiles per Hour = " << miles_per_hour2;
+            	break;
+    	}
+	case '8':
+		cout << "\n\t\t\t\t      ++++ANGULAR CONVERSIONS++++" << endl;
+    	cout << "\n1. Degrees to Radians" << endl;
+    	cout << "\n2. Radians to Degrees" << endl;
+		char angle_choice;
+    	cout << "Choice = ";
+    	cin >> angle_choice;
+    	switch (angle_choice)
+	    {
+       	 	case '1': cout << "DEGREES TO RADIANS!" << endl;
+            	cout << "Enter Angle in Degrees = ";
+           		float degrees;
+            	cin >> degrees;
+            	float radians;
+            	radians = degrees * (PI / 180.0);
+            	cout << "\nRadians = " << radians;
+            	break;
+        	case '2': 
+				cout << "RADIANS TO DEGREES!" << endl;
+            	cout << "Enter Angle in Radians = ";
+            	float radians2;
+            	cin >> radians2;
+            	float degrees2;
+            	degrees2 = radians2 * (180.0 / PI);
+            	cout << "\nDegrees = " << degrees2;
+            	break;
+    	}
+	case '9':
+		cout << "\n\t\t\t\t      ++++DIGITAL STORAGE CONVERSIONS++++" << endl;
+    	cout << "\n1. Bytes to Kilobytes" << endl;
+    	cout << "2. Kilobytes to Bytes" << endl;
+    	cout << "3. Megabytes to Gigabytes" << endl;
+    	cout << "4. Gigabytes to Terabytes" << endl;
+    	cout << "Choice = ";
+    	char storage_choice;
+		cin >> storage_choice;
+		switch(storage_choice)
+		{
+			case '1':
+				cout << "BYTES TO KILOBYTES!" << endl;
+            	cout << "Enter Size in Bytes = ";
+            	float bytes;
+            	cin >> bytes;
+            	float kilobytes;
+	            kilobytes = bytes / 1024;
+	            cout << "\nKilobytes = " << kilobytes;
+            	break;
+        	case '2':
+        		cout << "KILOBYTES TO BYTES!" << endl;
+            	cout << "Enter Size in Kilobytes = ";
+            	float kilobytes2;
+            	cin >> kilobytes2;
+            	float bytes2;
+            	bytes2 = kilobytes2 * 1024;
+            	cout << "\nBytes = " << bytes2;
+            	break;
+            case '3':
+            	cout << "MEGABYTES TO GIGABYTES!" << endl;
+            	cout << "Enter Size in Megabytes = ";
+            	float megabytes;
+            	cin >> megabytes;
+            	float gigabytes;
+            	gigabytes = megabytes / 1024;
+            	cout << "\nGigabytes = " << gigabytes;
+            	break;
+            case '4':
+            	cout << "GIGABYTES TO TERABYTES!" << endl;
+            	cout << "Enter Size in Gigabytes = ";
+            	float gigabytes2;
+            	cin >> gigabytes2;
+            	float terabytes;
+            	terabytes = gigabytes2 / 1024;
+            	cout << "\nTerabytes = " << terabytes;
+            	break;
+		}
 }
+
+
+
+
+}
+
+
