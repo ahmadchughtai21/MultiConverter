@@ -12,10 +12,10 @@ int main()
 
 	cout << "================================================================" << endl;
 	cout << endl;
+	cout << endl;
+menu:
 	cout << "------------------------ M A I N   M E N U ---------------------" << endl;
 
-// menu
-menu:
 	cout << "1. Calculator" << endl;
 	cout << "2. Length Conversions" << endl;
 	cout << "3. Time Conversions" << endl;
@@ -36,22 +36,26 @@ menu:
 	switch (choice1)
 	{
 	case '1':
+	menucal:
 		cout << endl;
 		cout << endl;
 		cout << "---------------------- C A L C U L A T O R --------------------" << endl;
-	menucal:
 		cout << "\n1. Addition" << endl;
 		cout << "2. Subtraction" << endl;
 		cout << "3. Multiplication" << endl;
 		cout << "4. Division" << endl;
 		char cal_choice;
+		cout << "---------------------------------------------------------------" << endl;
 		cout << "Enter a Choice from the Options Above : ";
 		cin >> cal_choice;
 		switch (cal_choice)
 		{
 		case '1':
 			float num1, num2, addition;
-			cout << "\nADDITION!";
+
+			cout << endl;
+			cout << endl;
+			cout << "+++++++++++++++++++++++++++ ADDITION ++++++++++++++++++++++++++" << endl;
 			cout << "\nEnter First Number = ";
 			cin >> num1;
 			cout << "\nEnter Second Number = ";
@@ -90,12 +94,16 @@ menu:
 			cout << "Division = " << div;
 			break;
 		default:
-			cout << "Enter a valid choice!";
+			cout << "Enter a valid choice! Try Again!";
+			cout << endl;
+			cout << endl;
 			goto menucal;
 		}
 	case '2':
-		cout << "\n\t\t\t\t      ++++LENGTH CONVERSION++++";
 	len:
+		cout << endl;
+		cout << endl;
+		cout << "-------------- L E N G T H   C O N V E R S I O N S ------------" << endl;
 		cout << "\n1.Feet to Meters";
 		cout << "\n2.Meter to Feet";
 		char choiceL;
@@ -128,7 +136,9 @@ menu:
 		}
 		else
 		{
-			cout << "Invalid choice!";
+			cout << "Enter a valid choice! Try Again!";
+			cout << endl;
+			cout << endl;
 			goto len;
 		}
 	case '3':
@@ -450,5 +460,33 @@ menu:
 			cout << "\nTerabytes = " << terabytes;
 			break;
 		}
+	case '10':
+		cout << "1. Const 1" << endl;
+		cout << "2. Const 2" << endl;
+		cout << "3. Const 3" << endl;
+		cout << "4. Const 4" << endl;
+		cout << "5. Const 5" << endl;
+		cout << "6. Const 6" << endl;
+		cout << "7. Const 7" << endl;
+		cout << "8. Const 8" << endl;
+		cout << "9. Const 9" << endl;
+		cout << "10. Const 10" << endl;
+		cout << "Enter a choice from the options above : ";
+		char con;
+		cin >> con;
+
+		switch (con)
+		{
+		case '1':
+
+		default:
+			break;
+		}
+	default:
+
+		cout << "Invalid Choice! Try Again!" << endl;
+		cout << endl;
+		cout << endl;
+		goto menu;
 	}
 }
