@@ -472,16 +472,7 @@ menu:
 		cout << "9. Const 9" << endl;
 		cout << "10. Const 10" << endl;
 		cout << "Enter a choice from the options above : ";
-		char con;
-		cin >> con;
-
-		switch (con)
-		{
-		case '1':
-
-		default:
-			break;
-		}
+		
 	default:
 
 		cout << "Invalid Choice! Try Again!" << endl;
