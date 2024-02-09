@@ -461,17 +461,17 @@ menu:
 			break;
 		}
 	case '10':
-		cout << "1. Const 1" << endl;
-		cout << "2. Const 2" << endl;
-		cout << "3. Const 3" << endl;
-		cout << "4. Const 4" << endl;
-		cout << "5. Const 5" << endl;
-		cout << "6. Const 6" << endl;
-		cout << "7. Const 7" << endl;
-		cout << "8. Const 8" << endl;
-		cout << "9. Const 9" << endl;
-		cout << "10. Const 10" << endl;
-		cout << "Enter a choice from the options above : ";
+		cout << "1.Bohar radius = 0.0529" << endl;
+		cout << "2.Faraday constant = 96,485" << endl;
+		cout << "3.Phlank constant = 6.626x10^-34" << endl;
+		cout << "4.Boltzman constant = 1.3806x10^-23" << endl;
+		cout << "5.Speed of light in vacuum = 3x10^6" << endl;
+		cout << "6.Gravitational constant = 6.673x10^-11" << endl;
+		cout << "7.Elementary charge = 1.6021x10^-19" << endl;
+		cout << "8.Electric Constant = 8.987x10^9" << endl;
+		cout << "9.Mass of Electron = 9.1x10^-31" << endl;
+		cout << "10.Mass of Proton = 1.67x10^-27" << endl;
+
 		
 	default:
 
