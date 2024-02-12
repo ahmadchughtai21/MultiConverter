@@ -277,14 +277,14 @@ menu:
 			cout << "GRAMS TO OUNCES!" << endl;
 			cout << "Enter the amount in GRAMS = ";
 			cin >> grams;
-			ounces = grams; // formula
+			ounces = grams / 28.34952;
 			cout << "\nOUNCES = " << ounces;
 			break;
 		case '6':
 			cout << "OUNCES TO GRAMS!" << endl;
 			cout << "Enter the amount in OUNCES = ";
 			cin >> ounces;
-			grams = ounces; // formula
+			grams = ounces * 28.34952;
 			cout << "\nPOUNDS = " << pounds;
 			break;
 		}
@@ -472,7 +472,6 @@ menu:
 		cout << "9.Mass of Electron = 9.1x10^-31" << endl;
 		cout << "10.Mass of Proton = 1.67x10^-27" << endl;
 
-		
 	default:
 
 		cout << "Invalid Choice! Try Again!" << endl;
