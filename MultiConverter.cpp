@@ -13,7 +13,7 @@ int main()
 	cout << "================================================================" << endl;
 	cout << endl;
 	cout << endl;
-menu:
+	menu:
 	cout << "------------------------ M A I N   M E N U ---------------------" << endl;
 
 	cout << "1. Calculator" << endl;
@@ -479,4 +479,7 @@ menu:
 		cout << endl;
 		goto menu;
 	}
+
 }
+
+
