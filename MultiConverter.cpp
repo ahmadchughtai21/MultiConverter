@@ -14,6 +14,7 @@ int main()
 	cout << endl;
 	cout << endl;
 menu:
+
 	cout << "------------------------ M A I N   M E N U ---------------------" << endl;
 
 	cout << "1. Calculator" << endl;
@@ -26,6 +27,7 @@ menu:
 	cout << "8. Angular Conversions" << endl;
 	cout << "9. Digital Storage Conversions" << endl;
 	cout << "X. Constant Values" << endl;
+	cout << "Y. Exit "<<endl;
 	cout << "---------------------------------------------------------------" << endl;
 	cout << "Enter a Choice from the Options Above : ";
 
@@ -165,11 +167,11 @@ menu:
 		case '2':
 			cout << "MINUTES TO HOURS !" << endl;
 			cout << "Enter the Time in Minutes = ";
-			float hour2;
+			float houri;
 			float minute2;
 			cin >> minute2;
-			hour2 = minute1 / 60;
-			cout << "\nTime in HOURS = " << hour2;
+			houri=minute2 / 60;
+			cout << "\nTime in HOURS = " << houri;
 			break;
 		case '3':
 			cout << "DAYS TO HOUR!" << endl;
@@ -471,9 +473,8 @@ menu:
 		cout << "8.Electric Constant = 8.987x10^9" << endl;
 		cout << "9.Mass of Electron = 9.1x10^-31" << endl;
 		cout << "10.Mass of Proton = 1.67x10^-27" << endl;
-	break
-
-		case 'x':
+		break;
+	case 'x':
 		cout << "1.Bohar radius = 0.0529" << endl;
 		cout << "2.Faraday constant = 96,485" << endl;
 		cout << "3.Phlank constant = 6.626x10^-34" << endl;
@@ -484,9 +485,14 @@ menu:
 		cout << "8.Electric Constant = 8.987x10^9" << endl;
 		cout << "9.Mass of Electron = 9.1x10^-31" << endl;
 		cout << "10.Mass of Proton = 1.67x10^-27" << endl;
-
+		goto menu;
 		break;
-
+	case 'Y':
+		cout<<"BYE BYE!";
+		break;
+	case 'y':
+		cout<<"BYE BYE!";
+		break;	
 	default:
 
 		cout << "Invalid Choice! Try Again!" << endl;
