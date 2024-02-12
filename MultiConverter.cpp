@@ -25,7 +25,7 @@ menu:
 	cout << "7. Speed Conversions" << endl;
 	cout << "8. Angular Conversions" << endl;
 	cout << "9. Digital Storage Conversions" << endl;
-	cout << "10. Constant Values" << endl;
+	cout << "X. Constant Values" << endl;
 	cout << "---------------------------------------------------------------" << endl;
 	cout << "Enter a Choice from the Options Above : ";
 
@@ -65,7 +65,7 @@ menu:
 			break;
 		case '2':
 			float sub;
-			cout << "\nSUBTRACTION!";
+			cout << "+++++++++++++++++++++++++ SUBTRACTION +++++++++++++++++++++++++" << endl;
 			cout << "\nEnter First Number = ";
 			cin >> num1;
 			cout << "\nEnter Second Number = ";
@@ -460,7 +460,7 @@ menu:
 			cout << "\nTerabytes = " << terabytes;
 			break;
 		}
-	case '10':
+	case 'X':
 		cout << "1.Bohar radius = 0.0529" << endl;
 		cout << "2.Faraday constant = 96,485" << endl;
 		cout << "3.Phlank constant = 6.626x10^-34" << endl;
@@ -471,6 +471,21 @@ menu:
 		cout << "8.Electric Constant = 8.987x10^9" << endl;
 		cout << "9.Mass of Electron = 9.1x10^-31" << endl;
 		cout << "10.Mass of Proton = 1.67x10^-27" << endl;
+	break
+
+		case 'x':
+		cout << "1.Bohar radius = 0.0529" << endl;
+		cout << "2.Faraday constant = 96,485" << endl;
+		cout << "3.Phlank constant = 6.626x10^-34" << endl;
+		cout << "4.Boltzman constant = 1.3806x10^-23" << endl;
+		cout << "5.Speed of light in vacuum = 3x10^6" << endl;
+		cout << "6.Gravitational constant = 6.673x10^-11" << endl;
+		cout << "7.Elementary charge = 1.6021x10^-19" << endl;
+		cout << "8.Electric Constant = 8.987x10^9" << endl;
+		cout << "9.Mass of Electron = 9.1x10^-31" << endl;
+		cout << "10.Mass of Proton = 1.67x10^-27" << endl;
+
+		break;
 
 	default:
 
